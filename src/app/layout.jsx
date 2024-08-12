@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
       <body className={`${montserrat.variable} ${jetBrain.variable} h-[100vh]`}>
         <Header />
         <PageTransitions className="h-full">{children}</PageTransitions>
+        <SpeedInsights />
       </body>
     </html>
   );
