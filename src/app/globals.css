@@ -2,32 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  /* * {
+    @apply border-border;
+  } */
+  body {
+    @apply font-primary  bg-neutral-950 text-white leading-loose;
   }
-}
+  .mono {
+    font-family: var(--font-jetbrain);
+  }
+  .hover-item .icon {
+    transition: color 0.2s ease;
+  }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  .list-item:hover .icon {
+    color: #73d0ffd8;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .outer {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 6px 7px 20px 4px rgb(0 0 0),
+      -2px -2px 7px 0px rgba(225, 225, 225, 0.165);
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  }
+
+  .inner {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+      inset -4px -4px 6px -1px rgba(0, 0, 0, 0.7),
+      -0.5px -0.5px 0px rgba(225, 225, 225, 0.456),
+      0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+      0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(145deg, #fbd8d826, #8d8d8d02);
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: rgb(0, 0, 0);
+    border-radius: 0 10px 10px 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #be185d;
+    border-radius: 5px;
   }
 }
