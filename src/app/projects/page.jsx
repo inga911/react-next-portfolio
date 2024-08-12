@@ -34,7 +34,7 @@ function Projects() {
       }}
       className="min-h-[80vh] bg-black  flex flex-col justify-center mt-2 xl:px-0"
     >
-      <div className="container mx-auto p-[45px]">
+      <div className="container mx-auto -mt-7 p-[35px]">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div>
@@ -104,9 +104,9 @@ function Projects() {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group justify-center items-center  rounded-xl">
+                    <div className="h-[310px] sm:h-[420px] md:h-[460px] relative group justify-center items-center  rounded-xl">
                       <div></div>
-                      <div className="relative w-full h-full">
+                      <div className="relative h-[250px] sm:w-[70%] sm:h-[350px] sm:mx-auto lg:w-full lg:h-full">
                         <Image
                           src={project.image}
                           layout="fill"
