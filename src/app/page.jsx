@@ -25,7 +25,9 @@ export default function Home() {
 
   return (
     <section className="relative h-[100vh] bg-black overflow-hidden z-20">
-      <Boxes />
+      <div className="hidden">
+        <Boxes />
+      </div>
       <div className="container mx-auto h-full z-30 ">
         <div className="flex flex-col mt-6 xl:flex-row items-center justify-between xl:pt-8 xl:pb-24 bg-black">
           {/* Text */}
