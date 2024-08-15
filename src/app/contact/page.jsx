@@ -4,19 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { motion } from "framer-motion";
-import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-const info = [
-  {
-    icon: <FaPhoneAlt />,
-    title: "Phone",
-    description: "+37065054548",
-  },
-  {
-    icon: <FaEnvelope />,
-    title: "Email",
-    description: "inga.banaityte1@gmail.com",
-  },
-];
+
 function Contact() {
   return (
     <motion.section

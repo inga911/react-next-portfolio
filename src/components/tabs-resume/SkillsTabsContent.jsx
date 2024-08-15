@@ -25,7 +25,7 @@ function SkillsTabsContent() {
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-full h-[150px] bg-slate-700/25 hover:text-sky-400 rounded-xl flex justify-center items-center group">
-                        <div className="text-5xl mr-4 transition-all duration-300">
+                        <div className="text-5xl transition-all duration-300">
                           {skill.icon}
                         </div>
                       </TooltipTrigger>

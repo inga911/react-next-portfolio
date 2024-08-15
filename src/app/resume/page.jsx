@@ -27,7 +27,7 @@ function Page() {
           className="flex flex-col xl:flex-row gap-[60px]"
           onValueChange={(value) => setSelectedTab(value)}
         >
-          <TabsList className="flex flex-col w-full max-w-[380px] h-[100%] mt-20 mx-auto xl:mx-0 gap-6 justify-center">
+          <TabsList className="flex flex-col w-full max-w-[380px] h-[100%] mt-20 mx-auto xl:mx-0 gap-6 justify-center xl:sticky xl:top-[150px]">
             <TabsTrigger
               value="experience"
               className="px-4 py-2 border border-pink-500 text-white rounded-xl mx-2 hover:bg-pink-300/25"
@@ -53,7 +53,7 @@ function Page() {
               About
             </TabsTrigger>
           </TabsList>
-          <div className="min-h-[70vh]  flex justify-center">
+          <div className="min-h-[70vh] w-[80%] mx-auto flex justify-center">
             <AnimatePresence mode="wait">
               {selectedTab === "experience" && (
                 <motion.div

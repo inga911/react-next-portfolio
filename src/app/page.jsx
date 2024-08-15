@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import JSZip from "jszip";
 import { saveAs } from "file-saver";
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 export default function Home() {
   const handleDownload = async () => {
