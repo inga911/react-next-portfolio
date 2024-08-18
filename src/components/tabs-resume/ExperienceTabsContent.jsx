@@ -20,7 +20,7 @@ function ExperienceTabsContent() {
                   className="bg-[#37373f53] h-[184px] py-5 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 group relative"
                 >
                   <div
-                    className="text-pink-600 text-2xl absolute right-0 top-5 hover:cursor-pointer"
+                    className="text-pink-600 text-2xl absolute right-8 top-5 hover:cursor-pointer"
                     onClick={() =>
                       document.getElementById(`my_modal_${index}`).showModal()
                     }
@@ -34,7 +34,7 @@ function ExperienceTabsContent() {
                   <dialog id={`my_modal_${index}`} className="modal">
                     <div className="modal-box bg-[#1c1c20] border-2 border-pink-600">
                       <form method="dialog">
-                        <button className="btn text-xl btn-circle btn-ghost absolute right-2 top-2 text-pink-700">
+                        <button className="btn text-base btn-circle btn-ghost absolute right-2 top-2 text-pink-700">
                           ✕
                         </button>
                       </form>
